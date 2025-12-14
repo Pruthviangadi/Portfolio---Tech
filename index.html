@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakkirashetti Angadi - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="gradient-text">Fakkirashetti Angadi</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#training" class="nav-link">Training</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <img src="/profile.jpg" alt="Fakkirashetti Angadi">
+                </div>
+                <h1 class="hero-title gradient-text">Fakkirashetti Angadi</h1>
+                <h2 class="hero-subtitle">Full Stack Developer</h2>
+                <p class="hero-description">Crafting digital experiences with Cloud, Web applications, and modern web technologies</p>
+                <div class="hero-buttons">
+                    <a href="resume.pdf" download="Fakkirashetti_Angadi_Resume.pdf" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                    <button class="btn btn-secondary">
+                        Let's Connect
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Passionate full stack developer skilled in building scalable web applications and integrating AI-powered solutions using Java, Python, and modern frameworks.</p>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/profile.jpg" alt="Fakkirashetti Angadi">
+                </div>
+                <div class="about-text">
+                    <p>I'm <strong>Fakkirashetti Angadi</strong>, a Java Full Stack Developer with a strong academic foundation as an Computer Science graduate with a CGPA of 7.51. I'm eager to contribute to innovative projects and bring my expertise to dynamic teams.</p>
+                    
+                    <p>My technical expertise spans across Java, Python, HTML/CSS, JavaScript, Django, MongoDB, Docker, Kubernetes, Cloud, and cloud-native deployment strategies. I've worked on diverse projects ranging from Online Bike Showroom Management System  And Universe – University Exclusive Social Media Applicationand OpenCV.</p>
+                    
+                    <p>I believe in writing clean, efficient code and staying updated with the latest industry trends. My goal is to create solutions that not only meet technical requirements but also provide exceptional user experiences.</p>
+                </div>
+            </div>
+            
+            <div class="attributes-grid">
+                <div class="attribute-card">
+                    <div class="attribute-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Clean Code</h3>
+                    <p>Writing maintainable and scalable applications</p>
+                </div>
+                <div class="attribute-card">
+                    <div class="attribute-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Performance</h3>
+                    <p>Optimized solutions for maximum efficiency</p>
+                </div>
+                <div class="attribute-card">
+                    <div class="attribute-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Modern Stack</h3>
+                    <p>Latest technologies and best practices</p>
+                </div>
+                <div class="attribute-card">
+                    <div class="attribute-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaboration</h3>
+                    <p>Team player with strong communication skills</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-subtitle">Technologies I work with to bring ideas to life</p>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon frontend">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">TypeScript</span>
+                        <span class="skill-item">Tailwind CSS</span>
+                        <span class="skill-item">HTML5</span>
+                        <span class="skill-item">CSS3</span>
+                        <span class="skill-item">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon backend">
+                        <i class="fas fa-angle-brackets"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Django</span>
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">C++</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon database">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon devops">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>DevOps</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Kubernetes</span>
+                        <span class="skill-item">Jenkins</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon ai-ml">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>AI/ML</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">TensorFlow</span>
+                        <span class="skill-item">Machine Learning</span>
+                        <span class="skill-item">Libraries</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon tools">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">GitHub</span>
+                        <span class="skill-item">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Real-world applications showcasing my technical expertise</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/UniVerse-img.png" alt="UniVerse - University Social Media Application">
+                        <div class="project-category fullstack">Full Stack</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>UniVerse - University Social Media</h3>
+                        <p>An exclusive university social media application that connects students, faculty, and alumni in a secure, engaging platform with real-time communication and academic collaboration features.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Socket.io</span>
+                            <span>Express</span>
+                            <span>JWT</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Pruthviangadi/UniVerse---A-Secured-University-Exclusive-Social-Media-Application" target="_blank" class="btn btn-code">
+                                <i class="fas fa-code"></i>
+                                Code
+                            </a>
+                            <button class="btn btn-demo">
+                                <i class="fas fa-external-link-alt"></i>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/bike-img.png" alt="Online Bike Showroom Management System - Holographic Interface">
+                        <div class="project-category fullstack">Full Stack</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Online Bike Showroom Management System</h3>
+                        <p>Created a DBMS Mini-Project to develop an efficient and user-friendly Online Bike showroom System with comprehensive inventory management and customer service features.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>MySQL</span>
+                            <span>JDBC</span>
+                            <span>Swing</span>
+                            <span>DBMS</span>
+                            <span>OOP</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-code">
+                                <i class="fas fa-code"></i>
+                                Code
+                            </button>
+                            <button class="btn btn-demo">
+                                <i class="fas fa-external-link-alt"></i>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="E-commerce Project">
+                        <div class="project-category fullstack">Full Stack</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>A modern e-commerce solution with real-time inventory management, payment processing, and user authentication system with comprehensive admin dashboard.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe</span>
+                            <span>Express</span>
+                            <span>Redux</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-code">
+                                <i class="fas fa-code"></i>
+                                Code
+                            </button>
+                            <button class="btn btn-demo">
+                                <i class="fas fa-external-link-alt"></i>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section id="training" class="section">
+        <div class="container">
+            <h2 class="section-title">Training & Certifications</h2>
+            <p class="section-subtitle">Structured programs that sharpened my technical expertise</p>
+            <div class="training-grid">
+                <div class="training-card">
+                    <div class="training-header">
+                        <h3>Cloud Application Developer Program</h3>
+                        <span class="training-org">Rooman Technologies / NSDC</span>
+                    </div>
+                    <div class="training-meta">
+                        <span><i class="fas fa-calendar"></i> Apr 2024 - Aug 2024</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Hybrid</span>
+                    </div>
+                    <p class="training-description">
+                        Intensive hands-on curriculum covering cloud-native design, Kubernetes orchestration, CI/CD automation, and multi-cloud deployment patterns.
+                    </p>
+                    <div class="training-topics">
+                        <span>Azure</span>
+                        <span>AWS</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>DevSecOps</span>
+                    </div>
+                </div>
+                <div class="training-card">
+                    <div class="training-header">
+                        <h3>Full Stack Engineering Bootcamp</h3>
+                        <span class="training-org">Amba Softwares</span>
+                    </div>
+                    <div class="training-meta">
+                        <span><i class="fas fa-calendar"></i> Jun 2023 - Sep 2023</span>
+                        <span><i class="fas fa-map-marker-alt"></i> On-site</span>
+                    </div>
+                    <p class="training-description">
+                        Project-based learning program focused on building scalable REST APIs, responsive UI systems, and integrating SQL/NoSQL databases.
+                    </p>
+                    <div class="training-topics">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>React</span>
+                        <span>MySQL</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">My professional journey and key accomplishments</p>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Full Stack Developer</h3>
+                            <h4>Amba softwares</h4>
+                        </div>
+                        <div class="experience-type">Internship</div>
+                    </div>
+                    <div class="experience-meta">
+                        <div class="experience-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>Oct 2023 - Nov 2023</span>
+                        </div>
+                        <div class="experience-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Laxmeshwar</span>
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        <p>Developed and maintained web applications using modern technologies. Collaborated with cross-functional teams to deliver high-quality software solutions.</p>
+                    </div>
+                    <div class="experience-achievements">
+                        <h5>Key Achievements:</h5>
+                        <ul>
+                            <li>Built responsive web applications using Python Django</li>
+                            <li>Learnt SQL and implemented database management systems</li>
+                        </ul>
+                    </div>
+                    <div class="experience-tech">
+                        <span>Java</span>
+                        <span>SQL</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Django</span>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Cloud application Developer Intern</h3>
+                            <h4>Rooman Technologies</h4>
+                        </div>
+                        <div class="experience-type">Internship</div>
+                    </div>
+                    <div class="experience-meta">
+                        <div class="experience-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>Sep 2024 - March 2025</span>
+                        </div>
+                        <div class="experience-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Online</span>
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        <p>I successfully completed a Research/Industry Internship as a Cloud Application Developer under the PMKVY program, 
+                            supported by NSDC and conducted by Rooman Technologies. The internship provided hands-on experience in cloud 
+                            technologies, application deployment, and industry-relevant skills.</p>
+                    </div>
+                    <div class="experience-achievements">
+                        <h5>Key Achievements:</h5>
+                        <ul>
+                            <li>Led the integration of Built a strong foundation in Cloud Application Development, aligning with current IT industry demands, enhancing team collaboration and automating deployment workflows.</li>
+                            <li>Successfully developed and deployed cloud-based applications using industry-standard tools and platforms. resulting in a streamlined and efficient development environment.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-tech">
+                        <span>Cloud</span>
+                        <span>Azure</span>
+                        <span>Kubernetes</span>
+                        <span>CI/CD</span>
+                        <span>AWS</span>
+                        <span>API</span>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Java Full Stack Developer</h3>
+                            <h4>TAP Academy</h4>
+                        </div>
+                        <div class="experience-type">Training</div>
+                    </div>
+                    <div class="experience-meta">
+                        <div class="experience-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>June 2025 - Present</span>
+                        </div>
+                        <div class="experience-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Banglore,karnataka,India</span>
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        <p>Partner with early-stage startups to launch MVPs, modernize legacy stacks, and implement observability across cloud workloads.</p>
+                    </div>
+                    <div class="experience-achievements">
+                        <h5>Key Achievements:</h5>
+                        <ul>
+                            <li>Trained Full Stack Developer skilled in Java, Spring Boot, React JS, JavaScript, HTML, CSS, and SQL, with experience in building end-to-end web applications.</li>
+                            <li>with hands-on experience building complete end-to-end web applications.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-tech">
+                        <span>Core Java</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>SQL</span>
+                        <span>JavaScript</span>
+                        <span>React Js</span>
+                        <span>Advanced Java</span>
+                        <span>Spring Boot</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title gradient-text">Let's Connect</h2>
+            <p class="section-subtitle">Ready to collaborate on your next project? Let's discuss how we can work together to bring your ideas to life.</p>
+            
+            <div class="contact-layout">
+                <div class="contact-info-section">
+                    <h3>Get In Touch</h3>
+                    <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology. Feel free to reach out!</p>
+                    
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">fakkirashettimangadi@gmail.com</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+91 9880576326</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Banglore,karnataka,India</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                                                  <div class="social-section">
+                                  <h4>Follow Me</h4>
+                                  <div class="social-icons">
+                                  <a href="https://www.linkedin.com/in/fakkirashetti-angadi-a89067256" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                      <a href="#" class="social-icon"><i class="fab fa-medium"></i></a>
+                                      <a href="https://www.instagram.com/pruthvi_m_angadi_?igsh=MWN2NXp4M29pbDVyNg==" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                      <a href="https://github.com/Pruthviangadi" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-github"></i></a>
+                                  </div>
+                              </div>
+                </div>
+                
+                <div class="contact-action-section">
+                    <div class="action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Ready to Start a Project?</h3>
+                        <p>Whether you need a full-stack application,Cloud setup, I'm here to help turn your vision into reality.</p>
+                        <a href="mailto:fakkirashettimangadi@gmail.com?subject=Project%20Inquiry%20from%20Portfolio&body=Hi%20Fakkirashetti%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.%20Here%20are%20some%20details%3A%0A-%20Project%20type%3A%20%5BWeb%2FCloud%2FApp%5D%0A-%20Timeline%3A%20%5BWhen%5D%0A-%20Budget%3A%20%5BOptional%5D%0A%0AThanks!" class="btn btn-primary action-btn">
+                            <i class="fas fa-envelope"></i>
+                            Send Message
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- Theme Options -->
+	<section id="themes" class="section themes-section">
+		<div class="container">
+			<div class="theme-panel">
+				<div class="theme-panel-header">
+					<div class="theme-panel-label">Theme Options</div>
+					<i class="fas fa-palette"></i>
+				</div>
+				<ul class="theme-list">
+					<li class="theme-item" id="themeSystem">
+						<div>
+							<i class="fas fa-desktop"></i>
+							<span>System</span>
+						</div>
+						<span class="theme-shortcut">Auto</span>
+					</li>
+					<li class="theme-item" id="themeLight">
+						<div>
+							<i class="fas fa-sun"></i>
+							<span>Light</span>
+						</div>
+						<span class="theme-shortcut">Light</span>
+					</li>
+					<li class="theme-item" id="themeDark">
+						<div>
+							<i class="fas fa-moon"></i>
+							<span>Dark</span>
+						</div>
+						<span class="theme-shortcut">Dark</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

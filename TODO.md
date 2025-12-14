@@ -1,0 +1,3 @@
+- [x] Add CSS for wave background animation in hero section
+- [x] Test animation in browser
+- [x] Ensure animation works on mobile and desktop
